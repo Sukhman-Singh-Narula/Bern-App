@@ -26,7 +26,7 @@ export default function RootLayout() {
         // Wait for 2.5 seconds to show our custom splash screen
         await new Promise(resolve => setTimeout(resolve, 2500));
         await SplashScreen.hideAsync();
-        
+
         // After another second, hide our custom splash and show the app
         setTimeout(() => {
           setShowSplash(false);
@@ -49,6 +49,7 @@ export default function RootLayout() {
       ) : (
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="account" options={{ headerShown: false }} />
           <Stack.Screen name="+not-found" options={{ title: 'Oops!' }} />
         </Stack>
       )}

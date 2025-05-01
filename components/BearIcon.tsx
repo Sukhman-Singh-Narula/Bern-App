@@ -8,7 +8,7 @@ export function BearIcon() {
       <View style={styles.innerGlow} />
       <View style={styles.bearContainer}>
         <Image
-          source={require('@/assets/images/bear.png')} // or './assets/images/teddy-bear.png' if absolute alias is not configured
+          source={require('@/assets/images/bear.png')}
           style={styles.bearImage}
           resizeMode="contain"
         />
